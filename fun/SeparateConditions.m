@@ -129,6 +129,9 @@ function adaptDataToSep = SeparateConditions(adaptDataToSep, oldConditionName, n
     if containsPercTask
         idxSplit = nonpercepStrides(idxSplit);
     end
+
+    % trialNum = adaptDataToSep.metaData.trialsInCondition{strcmp(adaptDataToSep.metaData.conditionName,oldConditionName)};
+    
     
     if newCondExist
         %if the new condition name given already exist, add this separated
